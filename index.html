@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body><div class="container">
+    
     <p class="text"></p>    
     
         <input type="text" id="inp__1" /><br><br>
@@ -21,12 +22,28 @@
 </div>
 
 
+<div class="inp">
 
+    <label class="title_2" for="channelInput">YouTubedan qidiring:</label><br>
+    <input class="text" type="text" placeholder="menga yozing ..." id="channelInput"><br>
+    <button class="you__btn" onclick="youtubeChannel()"> Qidirish</button>
+</div>
+<div class="inp">
 
+    <label class="title_2" for="channelInput">Googledan qidiring:</label><br>
+    <!-- <input class="text" type="text" placeholder="menga yozing ..." id="searchInput"><br>
+    <button class="you__btn" onclick="googleChannel()"> Qidirish</button> -->
+    <input class="text" type="text" id="searchInput"  placeholder="menga yozing ...">
+    <button class="you__btn" onclick="googleSearch()">Google'da qidirish</button>
+</div>
+<div class="class">
+    
 
-
-
-
+    <img class="img" src="" alt="">
+    <input type="text" class="image" placeholder="URL manzilini yozing"> <br>
+    <button class="btn" onclick="image()">Ekranga chiqarish</button>
+</div>
+</div>
 </body>
 <script src="js/main.js"></script>
 </html>

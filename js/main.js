@@ -24,3 +24,22 @@ function del() {
     }
     elText.textContent = arr;
 }
+
+
+function youtubeChannel() {
+    var videoName = document.getElementById("channelInput").value;
+    var url = `https://youtube.com/results?search_query=${videoName}`;
+    window.location.href = url;
+}
+function googleSearch() {
+    var searchQuery = document.getElementById("searchInput").value;
+    var url = `https://www.google.com/search?q=${searchQuery}`;
+    window.open(url, '_blank');
+}
+
+
+function image() {
+    var imageUrl = document.querySelector(".image").value;
+    var imgElement = document.querySelector(".img");
+    imgElement.src = imageUrl;
+}
